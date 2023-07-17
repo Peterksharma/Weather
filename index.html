@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+</head>
+<body>
+    <header>
+        <h1>Weather Dashbard</h1>
+    </header>
+    <div id="leftSideBtnContainr">
+        <h2> Search for a City:</h2>
+        <input type="text" id="citySearch" name="name">
+        <button id="searchBtn">Search</button>
+        <div id="citySearchList">
+            <button class="cityBtn" id="atlanta" value="atlanta">Atlanta</button>
+            <button class="cityBtn" id="denver" value="denver">Denver</button>
+            <button class="cityBtn" id="seattle" value="seattle">Seattle</button>
+            <button class="cityBtn" id="sanFrancisco" value="san+francisco">San Francisco</button>
+            <button class="cityBtn" id="orlando" value="orlando">Orlando</button>
+            <button class="cityBtn" id="newYork" value="new+york">New York</button>
+            <button class="cityBtn" id="chicago" value="chicago">Chicago</button>
+            <button class="cityBtn" id="austin" value="austin">Austin</button>
+    </div>
+    <div id="currentDay">
+        <h2>Display City name and info here.</h2>
+        <!-- Example!!
+        Needs City Name, Date,
+        Temp: 76.63F
+        Wind: 8.43 MPH
+        Humidity: 44%  -->
+    </div>
+    <div>
+        <h3>5-Day Forecast:</h3>
+        <div id="forcastContainer">
+            <div class="Forecast" id="day1">
+                Box for where the city data goes.
+                <!-- Example!!
+                Needs City Name, Date,
+                Temp: 76.63F
+                Wind: 8.43 MPH
+                Humidity: 44%  -->
+            </div>
+            <div class="Forecast" id="day2"></div>
+            <div class="Forecast" id="day3"></div>
+            <div class="Forecast" id="day4"></div>
+            <div class="Forecast" id="day5"></div>
+        </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
