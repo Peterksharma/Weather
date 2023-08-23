@@ -1,0 +1,110 @@
+/* Base Styles */
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;  
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f5f7fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #f5f7fa;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    font-weight: 400; 
+}
+
+/* Input & Button Styles */
+input, button {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+input {
+    border: 1px solid #dcdcdc;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border 0.2s;
+}
+
+input:focus {
+    border: 1px solid #529ff2;
+    outline: none;
+}
+
+button {
+    border: none;
+    background-color: #529ff2;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #003d7a;
+    transform: translateY(2px);
+}
+
+/* Layout & Containers */
+#leftSideBtnContainr {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#forecastWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#citySearchList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.cityBtn {
+    flex: 1 1 calc(33.333% - 10px); 
+}
+
+#currentDay {
+    background-color: #fff;
+    margin-top: 20px;
+    text-align: center;
+    width: 50%; 
+    margin: 20px auto;
+}
+
+.Forecast, .currentDay {
+    flex: 1;
+    margin: 0 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
